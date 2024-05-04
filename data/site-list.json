@@ -1,0 +1,169 @@
+[
+  {
+    "slug": "techsavvy_solutions",
+    "name": "TechSavvy Solutions",
+    "description": "TechSavvy Solutions provides cutting-edge software solutions for businesses looking to optimize their digital presence and streamline operations.",
+    "logo": "/logos/logoipsum-282.svg",
+    "screenshots": [{
+      "alt": "TechSavvy Solutions homepage screenshot",
+      "url": "/screenshots/techsavvy-solutions.png"
+    }],
+    "categories": ["tech", "consulting"],
+    "properties": {
+      "revenue": 10000000,
+      "number_of_employees": 150
+    },
+    "urls": {
+      "site": "https://techsavvy.com",
+      "pricing": "https://techsavvy.com/pricing",
+      "twitter": "https://twitter.com/Microsoft"
+    },
+    "images": {
+      "site": "https://placehold.co/1920x1080?text=site+screenshot",
+      "app": "https://placehold.co/1920x1080?text=app+screenshot"
+    },
+    "tags": ["TechSolutions", "Innovation"],
+    "meta": {
+      "title": "Best solution in the market"
+    }
+  },
+  {
+    "slug": "innotech_innovations",
+    "name": "InnoTech Innovations",
+    "description": "InnoTech Innovations is a pioneer in developing innovative technologies that revolutionize industries and empower businesses to thrive in the digital era.",
+    "logo": "/logos/logoipsum-291.svg",
+    "screenshots": [{
+      "alt": "InnoTech Innovations homepage screenshot",
+      "url": "/screenshots/InnoTech-Innovations.png"
+    }],
+    "categories": ["finance"],
+    "properties": {
+      "revenue": 8000000,
+      "number_of_employees": 120,
+      "market_share": 8
+    },
+    "tags": ["Innovation", "DigitalTransformation"],
+    "meta": {
+      "title": "innovative technologies for the digital era"
+    }
+  },
+  {
+    "slug": "globalwidgets_inc",
+    "name": "GlobalWidgets Inc.",
+    "description": "GlobalWidgets Inc. specializes in creating dynamic web applications and interactive widgets that enhance user engagement and drive online growth.",
+    "logo": "/logos/logoipsum-294.svg",
+    "screenshots": [{
+      "alt": "GlobalWidgets Inc. homepage screenshot",
+      "url": "/screenshots/GlobalWidgets-Inc.png"
+    }],
+    "categories": ["healthcare", "manufacturing"],
+    "properties": {
+      "revenue": 12000000,
+      "number_of_employees": 200,
+      "market_share": 15
+    },
+    "tags": ["SoftwareDevelopment", "CustomerExperience", "TechSolutions"]
+  },
+  {
+    "slug": "datafusion_co",
+    "name": "DataFusion Co.",
+    "description": "DataFusion Co. offers advanced data integration solutions, enabling enterprises to seamlessly combine and analyze data from multiple sources for actionable insights.",
+    "logo": "/logos/logoipsum-296.svg",
+    "screenshots": [{
+      "alt": "DataFusion Co. homepage screenshot",
+      "url": "/screenshots/DataFusion-Co.png"
+    }],
+    "categories": ["tech", "finance"],
+    "properties": {
+      "revenue": 15000000,
+      "number_of_employees": 180,
+      "market_share": 12
+    },
+    "tags": ["DataIntegration", "TechSolutions", "Finance"]
+  },
+  {
+    "slug": "alphabyte_technologies",
+    "name": "AlphaByte Technologies",
+    "description": "AlphaByte Technologies delivers robust software solutions powered by artificial intelligence and machine learning algorithms to optimize business processes and accelerate innovation.",
+    "logo": "/logos/logoipsum-299.svg",
+    "screenshots": [{
+      "alt": "AlphaByte Technologies homepage screenshot",
+      "url": "/screenshots/AlphaByte-Technologies.png"
+    }],
+    "categories": ["manufacturing", "consulting"],
+    "properties": {
+      "revenue": 9000000,
+      "number_of_employees": 130,
+      "market_share": 9
+    },
+    "tags": ["ArtificialIntelligence", "ConsultingServices"]
+  },
+  {
+    "slug": "pioneersoft_systems",
+    "name": "PioneerSoft Systems",
+    "description": "PioneerSoft Systems develops scalable enterprise software solutions tailored to meet the evolving needs of modern businesses, driving efficiency and productivity.",
+    "logo": "/logos/logoipsum-327.svg",
+    "screenshots": [{
+      "alt": "PioneerSoft Systems homepage screenshot",
+      "url": "/screenshots/PioneerSoft-Systems.png"
+    }],
+    "categories": ["tech", "consulting"],
+    "properties": {
+      "revenue": 11000000,
+      "number_of_employees": 160,
+      "market_share": 11
+    },
+    "tags": ["SoftwareDevelopment", "ConsultingServices"]
+  },
+  {
+    "slug": "ecotech_enterprises",
+    "name": "EcoTech Enterprises",
+    "description": "EcoTech Enterprises specializes in eco-friendly technology solutions that promote sustainability and environmental stewardship, helping organizations reduce their carbon footprint.",
+    "logo": "/logos/logoipsum-329.svg",
+    "screenshots": [{
+      "alt": "EcoTech Enterprises homepage screenshot",
+      "url": "/screenshots/EcoTech-Enterprises.png"
+    }],
+    "categories": ["finance", "healthcare"],
+    "properties": {
+      "revenue": 7000000,
+      "number_of_employees": 100,
+      "market_share": 7
+    },
+    "tags": ["Sustainability", "TechSolutions"]
+  },
+  {
+    "slug": "visionary_ventures_ltd",
+    "name": "Visionary Ventures Ltd.",
+    "description": "Visionary Ventures Ltd. is a forward-thinking technology company dedicated to creating innovative solutions that shape the future of digital transformation and redefine industry standards.",
+    "logo": "/logos/logoipsum-331.svg",
+    "screenshots": [{
+      "alt": "Visionary Ventures Ltd. homepage screenshot",
+      "url": "/screenshots/Visionary-Ventures-Ltd.png"
+    }],
+    "categories": ["tech", "consulting"],
+    "properties": {
+      "revenue": 13000000,
+      "number_of_employees": 190,
+      "market_share": 13
+    },
+    "tags": ["TechSolutions", "ConsultingServices"]
+  },
+  {
+    "slug": "synthetix_solutions",
+    "name": "Synthetix Solutions",
+    "description": "Synthetix Solutions offers synthetic data generation services, enabling businesses to safely and ethically generate realistic data sets for testing and development purposes.",
+    "logo": "/logos/logoipsum-332.svg",
+    "screenshots": [{
+      "alt": "Synthetix Solutions homepage screenshot",
+      "url": "/screenshots/Synthetix-Solutions.png"
+    }],
+    "categories": ["tech"],
+    "properties": {
+      "revenue": 8500000,
+      "number_of_employees": 140,
+      "market_share": 9
+    },
+    "tags": ["TechSolutions", "DataIntegration"]
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "main": {
+    "tags": {
+      "title": "{{= $$.siteConfig.name}} - {{= $$.siteConfig.title}}",
+      "meta": [
+        {"name": "viewport", "content": "width=device-width, initial-scale=1"},
+        {"name":"robots", "content": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"}
+      ]
+    }
+  },
+  "sitePage": {
+    "vars": {
+      "title": "{{=  $$.site.name }} - {{=  $$.site.meta?.title ?? ''}} | {{= $$.siteConfig.name}}",
+      "description": "{{= $$.site.description}}",
+      "canonical": "{{= $$.siteConfig.baseUrl}}/sites/{{= $$.site.slug}}",
+      "image": "https://dynamic-og-image-generator.vercel.app/api/generate?title={{= encodeURI(site.meta?.title ?? '')}}&author={{= encodeURI(site.name)}}&avatar={{= encodeURIComponent($$.siteConfig.baseUrl + $$.site.logo)}}&websiteUrl={{= encodeURIComponent($$.vars.canonical)}}&theme=Dracula"
+    },
+    "tags": {
+      "title": "{{= $$.vars.title}}",
+      "meta": [
+        {"name": "description", "content": "{{= $$.vars.description}}"},
+        {"property":"og:title", "content":"{{= $$.vars.title}}"},
+        {"property": "og:description", "content": "{{= $$.vars.description}}"},
+        {"property": "og:url", "content": "{{= $$.vars.canonical}}"},
+        {"property": "image", "content": "{{= $$.vars.image}}"},
+        {"property": "og:image", "content": "{{= $$.vars.image}}"},
+        {"property": "twitter:card", "content": "summary_large_image"},
+        {"property": "twitter:image", "content": "{{= $$.vars.image}}"},
+        {"property": "canonical", "content": "{{= $$.vars.canonical}}"}
+      ],
+      "script": [
+        {
+          "type": "application/ld+json",
+          "innerHTML": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"{{=  $$.site.name }}\",\"url\":\"{{=  $$.site.urls?.site }}\",\"image\":\"{{=  $$.site.images?.app }}\",\"applicationCategory\":\"{{=  $$.site.categories?.map(c => $$.categories[c].title).join(',') }}\"}"
+        }
+      ]
+    }
+  },
+  "listPage": {
+    "vars": {
+      "title": "{{= $$.siteConfig.name}} - {{= $$.siteConfig.title}}",
+      "description": "{{= $$.siteConfig.title}}: {{= $$.siteConfig.subtitle}}",
+      "image": "{{= $$.siteConfig.baseUrl}}/site-og.png",
+      "canonical": "{{= $$.siteConfig.baseUrl}}"
+    },
+    "title": "{{= $$.vars.title}}",
+    "og:title": "{{= $$.vars.title}}",
+    "description": "{{= $$.vars.description}}",
+    "og:description": "{{= $$.vars.description}}",
+    "og:url": "{{= $$.vars.canonical}}",
+    "image": "{{= $$.vars.image}}",
+    "og:image": "{{= $$.vars.image}}",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "{{= $$.vars.image}}",
+    "canonical": "{{= $$.vars.canonical}}"
+  }
+}

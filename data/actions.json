@@ -1,0 +1,37 @@
+[
+  {
+    "key": "site",
+    "label": "Visit site",
+    "icon": "las la-external-link-alt",
+    "outline": false,
+    "color": "primary",
+    "unelevated": true,
+    "no-caps": true,
+    "rounded": false,
+    "target": "_blank",
+    "showOn": ["list-card", "site-page", "site-page-side"]
+  },
+  {
+    "key": "pricing",
+    "label": "Pricing",
+    "icon": "las la-dollar-sign",
+    "outline": true,
+    "color": "grey-9",
+    "unelevated": true,
+    "no-caps": true,
+    "rounded": false,
+    "target": "_blank",
+    "showOn": ["site-page"]
+  },
+  {
+    "key": "twitter",
+    "outline": true,
+    "round": false,
+    "icon": "lab la-twitter",
+    "color": "grey-9",
+    "unelevated": true,
+    "no-caps": true,
+    "target": "_blank",
+    "showOn": ["site-page-side"]
+  }
+]

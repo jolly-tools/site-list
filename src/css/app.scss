@@ -1,0 +1,71 @@
+// app global css in SCSS form
+@font-face {
+  font-family: CrimsonText;
+  src: url(./fonts/CrimsonText-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: CrimsonText;
+  src: url(./fonts/CrimsonText-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: CrimsonText;
+  src: url(./fonts/CrimsonText-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: CrimsonText;
+  src: url(./fonts/CrimsonText-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: CrimsonText;
+  src: url(./fonts/CrimsonText-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: CrimsonText;
+  src: url(./fonts/CrimsonText-SemiBoldItalic.ttf) format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(./fonts/Quicksand-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(./fonts/Quicksand-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(./fonts/Quicksand-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(./fonts/Quicksand-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(./fonts/Quicksand-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Quicksand';
+}
+
+.title {
+  font-family: 'CrimsonText';
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "tech",
+    "title": "Technology",
+    "icon": "las la-crow"
+  },
+  {
+    "slug": "finance",
+    "title": "Finance",
+    "icon": "las la-cat"
+  },
+  {
+    "slug": "healthcare",
+    "title": "Healthcare",
+    "icon": "las la-frog"
+  },
+  {
+    "slug": "manufacturing",
+    "title": "Manufacturing",
+    "icon": "las la-fish"
+  },
+  {
+    "slug": "consulting",
+    "title": "Consulting",
+    "icon": "las la-spider"
+  }
+]

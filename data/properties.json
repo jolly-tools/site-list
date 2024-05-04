@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "revenue",
+    "label": "Revenue",
+    "icon": "las la-coins"
+  },
+  {
+    "slug": "number_of_employees",
+    "label": "Number of Employees",
+    "icon": "las la-users"
+  },
+  {
+    "slug": "market_share",
+    "label": "Market Share",
+    "icon": "las la-pizza-slice"
+  }
+]
