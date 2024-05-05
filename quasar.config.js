@@ -223,7 +223,7 @@ module.exports = configure(function (/* ctx */) {
           return true;
         }
 
-        if (type === "font" && ext === "woff2") {
+        if (type === "font" && extension === "woff2") {
           // only preload woff2 fonts
           return file;
         }
