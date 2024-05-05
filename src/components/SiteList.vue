@@ -1,51 +1,58 @@
 <template>
   <div class="q-pa-md row items-start q-gutter-md">
-    <q-card
+    <q-btn
+      flat
+      no-caps
+      unelevated
+      :to="`/sites/${site.slug}`"
       v-for="site in siteList"
       :key="site.name"
-      class="site-card q-pa-md cursor-pointer q-hoverable"
-      flat
-      bordered
-      v-ripple
-      @click="$router.push(`/sites/${site.slug}`)"
+      class="q-pa-none"
     >
-      <span class="q-focus-helper"></span>
-      <q-item class="q-pa-sm">
-        <q-item-section avatar>
-          <q-avatar
-            square
-            v-shared-element:[`logo-${site.slug}`]
-          >
-            <img :src="site.logo">
-          </q-avatar>
-        </q-item-section>
+      <q-card
+        class="site-card q-pa-md q-hoverable"
+        flat
+        bordered
+        v-ripple
+      >
+        <span class="q-focus-helper"></span>
+        <q-item class="q-pa-sm">
+          <q-item-section avatar>
+            <q-avatar
+              square
+              v-shared-element:[`logo-${site.slug}`]
+            >
+              <img :src="site.logo">
+            </q-avatar>
+          </q-item-section>
 
-        <q-item-section>
-          <q-item-label class="text-subtitle1 text-bold">
-            <span v-shared-element:[`name-${site.slug}`]="{compositeOnly:true}">{{site.name}}</span>
-          </q-item-label>
-        </q-item-section>
-      </q-item>
-      <q-separator spaced></q-separator>
-      <q-card-section class="q-pa-sm site-description ellipsis-3-lines">
-        <span>{{ site.description }}</span>
-      </q-card-section>
-      <q-card-section class="q-px-sm">
-        <q-list dense>
-          <q-item
-            v-for="prop in filterArrayByKeys(properties,'slug',site.properties)"
-            :key="prop.slug"
-            class="prop-line"
-          >
-            <q-item-section side>
-              <q-icon :name="prop.icon" size="xs"/>
-            </q-item-section>
-            <q-item-section class="text-sm">{{ prop.label }}</q-item-section>
-            <q-item-section side class="prop-value">{{site.properties[prop.slug]}}</q-item-section>
-          </q-item>
-        </q-list>
-      </q-card-section>
-    </q-card>
+          <q-item-section>
+            <q-item-label class="text-subtitle1 text-bold">
+              <span v-shared-element:[`name-${site.slug}`]="{compositeOnly:true}">{{site.name}}</span>
+            </q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-separator spaced></q-separator>
+        <q-card-section class="q-pa-sm site-description ellipsis-3-lines">
+          <span>{{ site.description }}</span>
+        </q-card-section>
+        <q-card-section class="q-px-sm">
+          <q-list dense>
+            <q-item
+              v-for="prop in filterArrayByKeys(properties,'slug',site.properties)"
+              :key="prop.slug"
+              class="prop-line"
+            >
+              <q-item-section side>
+                <q-icon :name="prop.icon" size="xs"/>
+              </q-item-section>
+              <q-item-section class="text-sm">{{ prop.label }}</q-item-section>
+              <q-item-section side class="prop-value">{{site.properties[prop.slug]}}</q-item-section>
+            </q-item>
+          </q-list>
+        </q-card-section>
+      </q-card>
+    </q-btn>
   </div>
 </template>
 <script>

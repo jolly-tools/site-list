@@ -71,6 +71,16 @@ export const useGlobalStore = defineStore('global', () => {
       router.push(buildUrl({category: _selectedCategory.value, tags: _selectedTags.value}))
     }
   }
+
+  // router.afterEach((to) => {
+  //   if (to.query.tags && selectedTags.value.join(',') !== to.query.tags) {
+  //     selectedTags.value = to.query.tags.split(',')
+  //   }
+  //   if (to.params.category && selectedCategory.value !== to.params.category) {
+  //     selectedCategory.value = to.params.category
+  //   }
+  // })
+
   return {
     config,
     siteList,

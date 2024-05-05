@@ -30,7 +30,10 @@ module.exports = configure(function (/* ctx */) {
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli/boot-files
     boot: [
-      'utils'
+      {
+        server: false,
+        path: 'utils'
+      }
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
@@ -210,6 +213,29 @@ module.exports = configure(function (/* ctx */) {
 
       // extendBexScriptsConf (esbuildConf) {}
       // extendBexManifestJson (json) {}
+    },
+
+    ssg: {
+      shouldPreload: ({ file, type, extension, isLazilyHydrated }) => {
+        // type is inferred based on the file extension.
+        // https://fetch.spec.whatwg.org/#concept-request-destination
+        if (type === "script" || type === "style") {
+          return true;
+        }
+
+        if (type === "font" && ext === "woff2") {
+          // only preload woff2 fonts
+          return file;
+        }
+
+        if (type === "image") {
+          // only preload important images
+          return file === "hero.jpg";
+        }
+
+        // do not preload anything else
+        return false;
+      }
     }
   }
 });

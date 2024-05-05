@@ -13,7 +13,7 @@ import {watch} from 'vue'
  * with the Router instance.
  */
 
-export default route(function ({ store /*, ssrContext*/ }) {
+export default route(function (/*{ store , ssrContext }*/) {
   const createHistory = process.env.SERVER
     ? createMemoryHistory
     : (process.env.VUE_ROUTER_MODE === 'history' ? createWebHistory : createWebHashHistory)
@@ -27,14 +27,14 @@ export default route(function ({ store /*, ssrContext*/ }) {
     history: createHistory(process.env.VUE_ROUTER_BASE)
   })
 
-  Router.afterEach((to) => {
-    const globalStore = useGlobalStore(store)
-    if (to.query.tags && globalStore.selectedTags.join(',') !== to.query.tags) {
-      globalStore.selectedTags = to.query.tags.split(',')
-    }
-    if (to.params.category && globalStore.selectedCategory !== to.params.category) {
-      globalStore.selectedCategory = to.params.category
-    }
-  })
+  // Router.afterEach((to) => {
+  //   const globalStore = useGlobalStore(store)
+  //   if (to.query.tags && globalStore.selectedTags.join(',') !== to.query.tags) {
+  //     globalStore.selectedTags = to.query.tags.split(',')
+  //   }
+  //   if (to.params.category && globalStore.selectedCategory !== to.params.category) {
+  //     globalStore.selectedCategory = to.params.category
+  //   }
+  // })
   return Router
 })
